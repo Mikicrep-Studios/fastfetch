@@ -3,7 +3,7 @@
 
 To compile on arch you must intall `vulkan-headers` and `cmake` package
 
-Then you do `make` and `sudo make install`
+Then you do `cmake .` then `make` and `sudo make install`
 
 # Fastfetch text
 
