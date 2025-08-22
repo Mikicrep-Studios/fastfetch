@@ -1,0 +1,11 @@
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/libfastfetch.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/fastfetch.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/flashfetch.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/package.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/package_source.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/edit_cache.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/rebuild_cache.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/list_install_components.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/install.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/install/local.dir
+/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/install/strip.dir

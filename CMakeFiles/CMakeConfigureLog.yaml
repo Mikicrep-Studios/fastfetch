@@ -1,0 +1,1241 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.16.1-zen1-1-zen - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/4.0.3-dirty/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c7ea/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4c7ea.dir/build.make CMakeFiles/cmTC_4c7ea.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh'
+        Building C object CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c7ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc5ul4eD.s
+        GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o /tmp/cc5ul4eD.s
+        GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_4c7ea
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c7ea.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c7ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c7ea.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6pySMt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c7ea /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20250813
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6pySMt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c7ea /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c7ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c7ea.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -o cmTC_4c7ea
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c7ea/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_4c7ea.dir/build.make CMakeFiles/cmTC_4c7ea.dir/build]
+        ignore line: [make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-nF6Gwh']
+        ignore line: [Building C object CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c7ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc5ul4eD.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o /tmp/cc5ul4eD.s]
+        ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_4c7ea]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c7ea.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c7ea' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c7ea.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6pySMt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c7ea /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6pySMt.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4c7ea] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20250813]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6pySMt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c7ea /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c7ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:44 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4607e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4607e.dir/build.make CMakeFiles/cmTC_4607e.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy'
+        Building C object CMakeFiles/cmTC_4607e.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4607e.dir/src.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy/src.c
+        Linking C executable cmTC_4607e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4607e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4607e.dir/src.c.o -o cmTC_4607e
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-4iDZEy'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:145 (enable_language)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/4.0.3-dirty/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:145 (enable_language)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a93fd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a93fd.dir/build.make CMakeFiles/cmTC_a93fd.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx'
+        Building CXX object CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a93fd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccXXtQH9.s
+        GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 452a313327dacf71986995db29f6855a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXXtQH9.s
+        GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a93fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a93fd.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a93fd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a93fd.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJrklxD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a93fd /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20250813
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJrklxD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a93fd /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a93fd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a93fd.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a93fd
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:145 (enable_language)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1] ==> [/usr/include/c++/15.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward] ==> [/usr/include/c++/15.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.2.1;/usr/include/c++/15.2.1/x86_64-pc-linux-gnu;/usr/include/c++/15.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:145 (enable_language)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a93fd/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_a93fd.dir/build.make CMakeFiles/cmTC_a93fd.dir/build]
+        ignore line: [make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ebUqRx']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a93fd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccXXtQH9.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 452a313327dacf71986995db29f6855a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXXtQH9.s]
+        ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a93fd]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a93fd.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a93fd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a93fd.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJrklxD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a93fd /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccJrklxD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a93fd] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20250813]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJrklxD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a93fd /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a93fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:145 (enable_language)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:154 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:277 (_ipo_run_language_check)"
+      - "CMakeLists.txt:170 (check_ipo_supported)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib" libfoo.a
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:154 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:277 (_ipo_run_language_check)"
+      - "CMakeLists.txt:170 (check_ipo_supported)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src -B/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar" qc libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/gcc-ranlib" libfoo.a
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/make  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        make[2]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/cc -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a
+        make[2]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:1212 (check_function_exists)"
+    checks:
+      - "Looking for wcwidth"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_WCWIDTH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c0609/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c0609.dir/build.make CMakeFiles/cmTC_c0609.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL'
+        Building C object CMakeFiles/cmTC_c0609.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=wcwidth -std=gnu11 -o CMakeFiles/cmTC_c0609.dir/CheckFunctionExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL/CheckFunctionExists.c
+        Linking C executable cmTC_c0609
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0609.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=wcwidth CMakeFiles/cmTC_c0609.dir/CheckFunctionExists.c.o -o cmTC_c0609
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-RnENaL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:1217 (check_function_exists)"
+    checks:
+      - "Looking for statx"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STATX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9ed23/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9ed23.dir/build.make CMakeFiles/cmTC_9ed23.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU'
+        Building C object CMakeFiles/cmTC_9ed23.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=statx -std=gnu11 -o CMakeFiles/cmTC_9ed23.dir/CheckFunctionExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU/CheckFunctionExists.c
+        Linking C executable cmTC_9ed23
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ed23.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=statx CMakeFiles/cmTC_9ed23.dir/CheckFunctionExists.c.o -o cmTC_9ed23
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hz3tgU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:1220 (check_function_exists)"
+    checks:
+      - "Looking for pipe2"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PIPE2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7959a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7959a.dir/build.make CMakeFiles/cmTC_7959a.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v'
+        Building C object CMakeFiles/cmTC_7959a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=pipe2 -std=gnu11 -o CMakeFiles/cmTC_7959a.dir/CheckFunctionExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v/CheckFunctionExists.c
+        Linking C executable cmTC_7959a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7959a.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=pipe2 CMakeFiles/cmTC_7959a.dir/CheckFunctionExists.c.o -o cmTC_7959a
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-1Air0v'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_3_0"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_876ca/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_876ca.dir/build.make CMakeFiles/cmTC_876ca.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz'
+        Building C object CMakeFiles/cmTC_876ca.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_876ca.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_876ca.dir/build.make:81: CMakeFiles/cmTC_876ca.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-tuH6xz'
+        make: *** [Makefile:134: cmTC_876ca/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_2_2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb2f9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fb2f9.dir/build.make CMakeFiles/cmTC_fb2f9.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF'
+        Building C object CMakeFiles/cmTC_fb2f9.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_fb2f9.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_fb2f9.dir/build.make:81: CMakeFiles/cmTC_fb2f9.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-mgDwnF'
+        make: *** [Makefile:134: cmTC_fb2f9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_2_1"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32b1f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_32b1f.dir/build.make CMakeFiles/cmTC_32b1f.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h'
+        Building C object CMakeFiles/cmTC_32b1f.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_32b1f.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_32b1f.dir/build.make:81: CMakeFiles/cmTC_32b1f.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-ZbVC0h'
+        make: *** [Makefile:134: cmTC_32b1f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_2_0"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3afa7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3afa7.dir/build.make CMakeFiles/cmTC_3afa7.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m'
+        Building C object CMakeFiles/cmTC_3afa7.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_3afa7.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_3afa7.dir/build.make:81: CMakeFiles/cmTC_3afa7.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-632t1m'
+        make: *** [Makefile:134: cmTC_3afa7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_1_2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_81a4f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_81a4f.dir/build.make CMakeFiles/cmTC_81a4f.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk'
+        Building C object CMakeFiles/cmTC_81a4f.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_81a4f.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_81a4f.dir/build.make:81: CMakeFiles/cmTC_81a4f.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-7VFsVk'
+        make: *** [Makefile:134: cmTC_81a4f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_1_1"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_faf52/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_faf52.dir/build.make CMakeFiles/cmTC_faf52.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO'
+        Building C object CMakeFiles/cmTC_faf52.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_faf52.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_faf52.dir/build.make:81: CMakeFiles/cmTC_faf52.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hdNBDO'
+        make: *** [Makefile:134: cmTC_faf52/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:59 (check_symbol_exists)"
+      - "/usr/share/cmake/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:1377 (find_package)"
+      - "CMakeLists.txt:1487 (ff_lib_enable)"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion      "
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_1_0"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf948/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bf948.dir/build.make CMakeFiles/cmTC_bf948.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi'
+        Building C object CMakeFiles/cmTC_bf948.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion        -std=gnu11 -o CMakeFiles/cmTC_bf948.dir/CheckSymbolExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi/CheckSymbolExists.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+            2 | #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_bf948.dir/build.make:81: CMakeFiles/cmTC_bf948.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-eyWSoi'
+        make: *** [Makefile:134: cmTC_bf948/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1699 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for linux/videodev2.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LINUX_VIDEODEV2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ed12c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ed12c.dir/build.make CMakeFiles/cmTC_ed12c.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6'
+        Building C object CMakeFiles/cmTC_ed12c.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_ed12c.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6/CheckIncludeFile.c
+        Linking C executable cmTC_ed12c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed12c.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  CMakeFiles/cmTC_ed12c.dir/CheckIncludeFile.c.o -o cmTC_ed12c
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-hTyFo6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1705 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for linux/wireless.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_LINUX_WIRELESS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_44587/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_44587.dir/build.make CMakeFiles/cmTC_44587.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb'
+        Building C object CMakeFiles/cmTC_44587.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_44587.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb/CheckIncludeFile.c
+        Linking C executable cmTC_44587
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44587.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  CMakeFiles/cmTC_44587.dir/CheckIncludeFile.c.o -o cmTC_44587
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-rtv0jb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1711 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for utmpx.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UTMPX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea56d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ea56d.dir/build.make CMakeFiles/cmTC_ea56d.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5'
+        Building C object CMakeFiles/cmTC_ea56d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_ea56d.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5/CheckIncludeFile.c
+        Linking C executable cmTC_ea56d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea56d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  CMakeFiles/cmTC_ea56d.dir/CheckIncludeFile.c.o -o cmTC_ea56d
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-GDYRf5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1715 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for wordexp.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_WORDEXP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96714/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_96714.dir/build.make CMakeFiles/cmTC_96714.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3'
+        Building C object CMakeFiles/cmTC_96714.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_96714.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3/CheckIncludeFile.c
+        Linking C executable cmTC_96714
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96714.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  CMakeFiles/cmTC_96714.dir/CheckIncludeFile.c.o -o cmTC_96714
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-YkYTg3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1719 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for glob.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GLOB"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0110d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0110d.dir/build.make CMakeFiles/cmTC_0110d.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU'
+        Building C object CMakeFiles/cmTC_0110d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_0110d.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU/CheckIncludeFile.c
+        Linking C executable cmTC_0110d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0110d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  CMakeFiles/cmTC_0110d.dir/CheckIncludeFile.c.o -o cmTC_0110d
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-BSCISU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:1724 (CHECK_INCLUDE_FILE)"
+    checks:
+      - "Looking for pthread_np.h"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_36710/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_36710.dir/build.make CMakeFiles/cmTC_36710.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl'
+        Building C object CMakeFiles/cmTC_36710.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion  -std=gnu11 -o CMakeFiles/cmTC_36710.dir/CheckIncludeFile.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl/CheckIncludeFile.c
+        /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl/CheckIncludeFile.c:1:10: fatal error: pthread_np.h: No such file or directory
+            1 | #include <pthread_np.h>
+              |          ^~~~~~~~~~~~~~
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_36710.dir/build.make:81: CMakeFiles/cmTC_36710.dir/CheckIncludeFile.c.o] Error 1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-HUg3dl'
+        make: *** [Makefile:134: cmTC_36710/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:1730 (check_function_exists)"
+    checks:
+      - "Looking for pthread_timedjoin_np"
+    directories:
+      source: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c"
+      binary: "/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion"
+      CMAKE_C_FLAGS_DEBUG: "-g -fno-omit-frame-pointer"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_TIMEDJOIN_NP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_af5f1/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_af5f1.dir/build.make CMakeFiles/cmTC_af5f1.dir/build
+        make[1]: Entering directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c'
+        Building C object CMakeFiles/cmTC_af5f1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=pthread_timedjoin_np -std=gnu11 -o CMakeFiles/cmTC_af5f1.dir/CheckFunctionExists.c.o -c /home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c/CheckFunctionExists.c
+        Linking C executable cmTC_af5f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af5f1.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wextra -Wconversion -Werror=uninitialized -Werror=return-type -Werror=vla -Werror=incompatible-pointer-types -Werror=implicit-function-declaration -Werror=int-conversion -DCHECK_FUNCTION_EXISTS=pthread_timedjoin_np CMakeFiles/cmTC_af5f1.dir/CheckFunctionExists.c.o -o cmTC_af5f1
+        make[1]: Leaving directory '/home/mikicrep/Desktop/cloned/fastfetch/CMakeFiles/CMakeScratch/TryCompile-9ppU6c'
+        
+      exitCode: 0
+...

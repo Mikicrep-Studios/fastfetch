@@ -1,4 +1,11 @@
-# Fastfetch
+# Mikicrep Studios text
+## Fastfetch for Mikicrep OS
+
+To compile on arch you must intall `vulkan-headers` and `cmake` package
+
+Then you do `make` and `sudo make install`
+
+# Fastfetch text
 
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/fastfetch-cli/fastfetch/ci.yml)](https://github.com/fastfetch-cli/fastfetch/actions)
 [![GitHub license](https://img.shields.io/github/license/fastfetch-cli/fastfetch)](https://github.com/fastfetch-cli/fastfetch/blob/dev/LICENSE)
